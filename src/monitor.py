@@ -74,33 +74,57 @@ def dashboard(items):
     (ROOT/'docs/index.html').write_text(html,encoding='utf-8')
 
 def main():
-    stamp=datetime.now(KST).strftime('%Y%m%d_%H%M%S'); alerts=[]; items=[]
+    stamp = datetime.now(KST).strftime('%Y%m%d_%H%M%S')
+    alerts = []
+    items = []
+
     for symbol in CFG['symbols']:
-        lp=ROOT/'data/latest'/f'{symbol}.json'
-        old=json.loads(lp.read_text(encoding='utf-8')) if lp.exists() else None
-        new=summarize(fetch(CFG['api_template'].format(symbol=symbol)))
-        lp.write_text(json.dumps(new,ensure_ascii=False,indent=2),encoding='utf-8')
-        hd=ROOT/'data/history'/symbol; hd.mkdir(parents=True,exist_ok=True)
-        (hd/f'{stamp}.json').write_text(json.dumps(new,ensure_ascii=False,indent=2),encoding='utf-8')
-        ch=changes(old,new)
-        if ch: alerts.append(f"[{symbol}] "+' | '.join(ch))
+        lp = ROOT / 'data/latest' / f'{symbol}.json'
+        old = json.loads(lp.read_text(encoding='utf-8')) if lp.exists() else None
+
+        new = summarize(fetch(CFG['api_template'].format(symbol=symbol)))
+
+        lp.write_text(
+            json.dumps(new, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+
+        hd = ROOT / 'data/history' / symbol
+        hd.mkdir(parents=True, exist_ok=True)
+
+        (hd / f'{stamp}.json').write_text(
+            json.dumps(new, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+
+        ch = changes(old, new)
+
+        if ch:
+            alerts.append(f"[{symbol}] " + ' | '.join(ch))
+
         items.append(new)
+
     dashboard(items)
 
-if alerts:
-    telegram('옵션 변화 감지\n' + '\n'.join(alerts))
-else:
-    symbols = ', '.join(x['symbol'] for x in items)
-    telegram(
-        '✅ 옵션 모니터 테스트 성공\n'
-        f'수집 종목: {symbols}\n'
-        f'실행 시각: {datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")} KST\n'
-        '현재 알림 조건에 해당하는 변화는 없습니다.'
-    )
+    if alerts:
+        telegram(
+            '옵션 변화 감지\n' +
+            '\n'.join(alerts)
+        )
+    else:
+        symbols = ', '.join(x['symbol'] for x in items)
+        telegram(
+            '✅ 옵션 모니터 테스트 성공\n'
+            f'수집 종목: {symbols}\n'
+            f'실행 시각: {datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")} KST\n'
+            '현재 알림 조건에 해당하는 변화는 없습니다.'
+        )
 
-print(json.dumps({
-    'updated': [x['symbol'] for x in items],
-    'alerts': alerts
-}, ensure_ascii=False))
+    print(json.dumps({
+        'updated': [x['symbol'] for x in items],
+        'alerts': alerts
+    }, ensure_ascii=False))
 
-if __name__=='__main__': main()
+
+if __name__ == '__main__':
+    main()
