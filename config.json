@@ -1,0 +1,10 @@
+{
+  "symbols": ["SNDK", "MU"],
+  "api_template": "https://tooja.me/api/options?symbol={symbol}",
+  "alert": {
+    "spot_move_pct": 2.0,
+    "wall_oi_change_pct": 20.0,
+    "atm_iv_change_points": 5.0
+  },
+  "keep_history_days": 45
+}
