@@ -6,6 +6,10 @@ ROOT = Path(__file__).resolve().parents[1]
 CFG = json.loads((ROOT/'config.json').read_text(encoding='utf-8'))
 KST = timezone(timedelta(hours=9))
 
+(ROOT / "data/latest").mkdir(parents=True, exist_ok=True)
+(ROOT / "data/history").mkdir(parents=True, exist_ok=True)
+(ROOT / "docs").mkdir(parents=True, exist_ok=True)
+
 def fetch(url):
     req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0 options-monitor/1.0'})
     with urllib.request.urlopen(req, timeout=30) as r:
