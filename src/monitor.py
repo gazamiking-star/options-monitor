@@ -107,18 +107,10 @@ def main():
     dashboard(items)
 
     if alerts:
-        telegram(
-            '옵션 변화 감지\n' +
-            '\n'.join(alerts)
-        )
-    else:
-        symbols = ', '.join(x['symbol'] for x in items)
-        telegram(
-            '✅ 옵션 모니터 테스트 성공\n'
-            f'수집 종목: {symbols}\n'
-            f'실행 시각: {datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")} KST\n'
-            '현재 알림 조건에 해당하는 변화는 없습니다.'
-        )
+    telegram(
+        '옵션 변화 감지\n' +
+        '\n'.join(alerts)
+    )
 
     print(json.dumps({
         'updated': [x['symbol'] for x in items],
