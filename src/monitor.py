@@ -73,6 +73,80 @@ def dashboard(items):
     html="""<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width'><title>Options Monitor</title><style>body{font-family:system-ui;max-width:900px;margin:30px auto;padding:0 16px;background:#111;color:#eee}section{border:1px solid #444;border-radius:14px;padding:18px;margin:14px 0;background:#1b1b1b}h1,h2{margin-top:0}small{color:#aaa}</style><h1>무료 옵션 모니터</h1>"""+''.join(cards)
     (ROOT/'docs/index.html').write_text(html,encoding='utf-8')
 
+def publish_api(items):
+    api_root = ROOT / 'docs' / 'api'
+    latest_dir = api_root / 'latest'
+    history_dir = api_root / 'history'
+
+    latest_dir.mkdir(parents=True, exist_ok=True)
+    history_dir.mkdir(parents=True, exist_ok=True)
+
+    for item in items:
+        symbol = item['symbol']
+
+        # 1. 최신 전체 요약 저장
+        latest_path = latest_dir / f'{symbol}.json'
+        latest_path.write_text(
+            json.dumps(item, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+
+        # 2. 분석용 간략 기록
+        snapshot = {
+            'captured_at_kst': item.get('captured_at_kst'),
+            'symbol': symbol,
+            'spot': item.get('spot'),
+            'expiry': item.get('expiry'),
+            'dte': item.get('dte'),
+            'maxPain': item.get('maxPain'),
+            'distance_to_max_pain_pct': item.get(
+                'distance_to_max_pain_pct'
+            ),
+            'atm_strike': item.get('atm_strike'),
+            'atm_call_iv': item.get('atm_call_iv'),
+            'atm_put_iv': item.get('atm_put_iv'),
+            'atm_gamma': item.get('atm_gamma'),
+            'call_wall_near': item.get('call_wall_near'),
+            'put_wall_near': item.get('put_wall_near'),
+            'call_wall_all': item.get('call_wall_all'),
+            'put_wall_all': item.get('put_wall_all'),
+            'top_call_oi': item.get('top_call_oi'),
+            'top_put_oi': item.get('top_put_oi'),
+            'top_call_volume': item.get('top_call_volume'),
+            'top_put_volume': item.get('top_put_volume')
+        }
+
+        history_path = history_dir / f'{symbol}.json'
+
+        if history_path.exists():
+            try:
+                history = json.loads(
+                    history_path.read_text(encoding='utf-8')
+                )
+            except (json.JSONDecodeError, OSError):
+                history = []
+        else:
+            history = []
+
+        if not isinstance(history, list):
+            history = []
+
+        # 같은 시각의 중복 기록 방지
+        if (
+            not history
+            or history[-1].get('captured_at_kst')
+            != snapshot['captured_at_kst']
+        ):
+            history.append(snapshot)
+
+        # 최근 96회만 공개
+        history = history[-96:]
+
+        history_path.write_text(
+            json.dumps(history, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+
 def main():
     stamp = datetime.now(KST).strftime('%Y%m%d_%H%M%S')
     alerts = []
@@ -105,7 +179,7 @@ def main():
         items.append(new)
 
     dashboard(items)
-
+    publish_api(items)
     if alerts:
     telegram(
         '옵션 변화 감지\n' +
