@@ -4718,5 +4718,123 @@
         "vol": 2395
       }
     ]
+  },
+  {
+    "captured_at_kst": "2026-08-18T02:00:00+09:00",
+    "symbol": "SNDK",
+    "name": "Sandisk Corporation",
+    "spot": 1804.25,
+    "expiry": "2026-08-21",
+    "dte": 3.3,
+    "maxPain": 1500.0,
+    "distance_to_max_pain_pct": -16.86,
+    "atm_strike": 1800,
+    "atm_call_iv": 0.8275,
+    "atm_put_iv": 0.9466,
+    "atm_gamma": 0.0028,
+    "call_wall_near": {
+      "strike": 2000,
+      "oi": 4653
+    },
+    "put_wall_near": {
+      "strike": 1600,
+      "oi": 3597
+    },
+    "call_wall_all": {
+      "strike": 2000,
+      "oi": 4653
+    },
+    "put_wall_all": {
+      "strike": 800,
+      "oi": 4706
+    },
+    "top_call_oi": [
+      {
+        "strike": 2000,
+        "oi": 4653
+      },
+      {
+        "strike": 1600,
+        "oi": 4153
+      },
+      {
+        "strike": 1700,
+        "oi": 4067
+      },
+      {
+        "strike": 1500,
+        "oi": 3114
+      },
+      {
+        "strike": 1300,
+        "oi": 2954
+      }
+    ],
+    "top_put_oi": [
+      {
+        "strike": 800,
+        "oi": 4706
+      },
+      {
+        "strike": 850,
+        "oi": 4168
+      },
+      {
+        "strike": 400,
+        "oi": 3709
+      },
+      {
+        "strike": 1600,
+        "oi": 3597
+      },
+      {
+        "strike": 1000,
+        "oi": 2299
+      }
+    ],
+    "top_call_volume": [
+      {
+        "strike": 1800,
+        "vol": 9913
+      },
+      {
+        "strike": 2000,
+        "vol": 8099
+      },
+      {
+        "strike": 1900,
+        "vol": 6932
+      },
+      {
+        "strike": 2100,
+        "vol": 3999
+      },
+      {
+        "strike": 2200,
+        "vol": 3544
+      }
+    ],
+    "top_put_volume": [
+      {
+        "strike": 1500,
+        "vol": 4742
+      },
+      {
+        "strike": 1600,
+        "vol": 4479
+      },
+      {
+        "strike": 1700,
+        "vol": 4328
+      },
+      {
+        "strike": 850,
+        "vol": 3161
+      },
+      {
+        "strike": 1800,
+        "vol": 2975
+      }
+    ]
   }
 ]
