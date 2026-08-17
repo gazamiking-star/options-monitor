@@ -4836,5 +4836,123 @@
         "vol": 12590
       }
     ]
+  },
+  {
+    "captured_at_kst": "2026-08-18T03:01:39+09:00",
+    "symbol": "MU",
+    "name": "Micron Technology, Inc.",
+    "spot": 1018.475,
+    "expiry": "2026-08-17",
+    "dte": 0.5,
+    "maxPain": 925.0,
+    "distance_to_max_pain_pct": -9.18,
+    "atm_strike": 1020,
+    "atm_call_iv": 0.2149,
+    "atm_put_iv": 0.2018,
+    "atm_gamma": 0.0485,
+    "call_wall_near": {
+      "strike": 1050,
+      "oi": 4897
+    },
+    "put_wall_near": {
+      "strike": 900,
+      "oi": 1873
+    },
+    "call_wall_all": {
+      "strike": 1050,
+      "oi": 4897
+    },
+    "put_wall_all": {
+      "strike": 900,
+      "oi": 1873
+    },
+    "top_call_oi": [
+      {
+        "strike": 1050,
+        "oi": 4897
+      },
+      {
+        "strike": 1000,
+        "oi": 4614
+      },
+      {
+        "strike": 865,
+        "oi": 3943
+      },
+      {
+        "strike": 1100,
+        "oi": 2842
+      },
+      {
+        "strike": 1005,
+        "oi": 2596
+      }
+    ],
+    "top_put_oi": [
+      {
+        "strike": 900,
+        "oi": 1873
+      },
+      {
+        "strike": 965,
+        "oi": 1614
+      },
+      {
+        "strike": 950,
+        "oi": 1453
+      },
+      {
+        "strike": 955,
+        "oi": 1163
+      },
+      {
+        "strike": 930,
+        "oi": 1137
+      }
+    ],
+    "top_call_volume": [
+      {
+        "strike": 1050,
+        "vol": 69239
+      },
+      {
+        "strike": 1040,
+        "vol": 40130
+      },
+      {
+        "strike": 1030,
+        "vol": 38384
+      },
+      {
+        "strike": 1020,
+        "vol": 32285
+      },
+      {
+        "strike": 1025,
+        "vol": 27821
+      }
+    ],
+    "top_put_volume": [
+      {
+        "strike": 1000,
+        "vol": 39473
+      },
+      {
+        "strike": 1020,
+        "vol": 24098
+      },
+      {
+        "strike": 1010,
+        "vol": 17683
+      },
+      {
+        "strike": 1025,
+        "vol": 17088
+      },
+      {
+        "strike": 975,
+        "vol": 15250
+      }
+    ]
   }
 ]
