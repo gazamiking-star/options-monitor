@@ -9,7 +9,7 @@
   "atm_strike": 1630,
   "atm_call_iv": 0.8613,
   "atm_put_iv": 0.836,
-  "atm_gamma": 0.0037,
+  "atm_gamma": 0.0038,
   "call_wall_all": {
     "strike": 2000,
     "oi": 5013
@@ -114,5 +114,5 @@
       "vol": 3639
     }
   ],
-  "captured_at_kst": "2026-08-19T05:55:58+09:00"
+  "captured_at_kst": "2026-08-19T06:50:03+09:00"
 }
