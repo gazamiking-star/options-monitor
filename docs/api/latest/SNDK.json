@@ -3,13 +3,13 @@
   "name": "Sandisk Corporation",
   "spot": 1568.87,
   "expiry": "2026-08-21",
-  "dte": 1.2,
+  "dte": 1.1,
   "maxPain": 1590.0,
   "distance_to_max_pain_pct": 1.35,
   "atm_strike": 1570,
-  "atm_call_iv": 0.7526,
-  "atm_put_iv": 0.8464,
-  "atm_gamma": 0.006,
+  "atm_call_iv": 0.8055,
+  "atm_put_iv": 0.7891,
+  "atm_gamma": 0.0058,
   "call_wall_all": {
     "strike": 2000,
     "oi": 7019
@@ -73,46 +73,46 @@
   "top_call_volume": [
     {
       "strike": 1800,
-      "vol": 9380
+      "vol": 9656
     },
     {
       "strike": 1600,
-      "vol": 8438
+      "vol": 8818
     },
     {
       "strike": 1700,
-      "vol": 6886
+      "vol": 7211
     },
     {
       "strike": 1750,
-      "vol": 4797
+      "vol": 5010
     },
     {
       "strike": 1650,
-      "vol": 4631
+      "vol": 4777
     }
   ],
   "top_put_volume": [
     {
       "strike": 1500,
-      "vol": 6730
-    },
-    {
-      "strike": 1400,
-      "vol": 4545
+      "vol": 7122
     },
     {
       "strike": 1550,
-      "vol": 4125
+      "vol": 4689
+    },
+    {
+      "strike": 1400,
+      "vol": 4638
     },
     {
       "strike": 1600,
-      "vol": 3771
+      "vol": 3926
     },
     {
       "strike": 1580,
-      "vol": 3148
+      "vol": 3217
     }
   ],
-  "captured_at_kst": "2026-08-20T05:02:21+09:00"
+  "captured_at_kst": "2026-08-20T06:44:43+09:00"
 }
