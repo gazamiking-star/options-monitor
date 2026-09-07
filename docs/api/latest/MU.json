@@ -3,13 +3,13 @@
   "name": "Micron Technology, Inc.",
   "spot": 1016.59,
   "expiry": "2026-09-09",
-  "dte": 1.2,
+  "dte": 1.1,
   "maxPain": 925.0,
   "distance_to_max_pain_pct": -9.01,
   "atm_strike": 1015,
   "atm_call_iv": 0.5974,
   "atm_put_iv": 0.608,
-  "atm_gamma": 0.0112,
+  "atm_gamma": 0.012,
   "call_wall_all": {
     "strike": 1000,
     "oi": 2734
@@ -114,5 +114,5 @@
       "vol": 4221
     }
   ],
-  "captured_at_kst": "2026-09-08T03:06:36+09:00"
+  "captured_at_kst": "2026-09-08T06:41:59+09:00"
 }

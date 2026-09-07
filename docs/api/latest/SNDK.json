@@ -3,13 +3,13 @@
   "name": "Sandisk Corporation",
   "spot": 1740.0,
   "expiry": "2026-09-11",
-  "dte": 3.2,
+  "dte": 3.1,
   "maxPain": 1500.0,
   "distance_to_max_pain_pct": -13.79,
   "atm_strike": 1740,
   "atm_call_iv": 0.8582,
   "atm_put_iv": 0.8386,
-  "atm_gamma": 0.0028,
+  "atm_gamma": 0.0029,
   "call_wall_all": {
     "strike": 1390,
     "oi": 1535
@@ -114,5 +114,5 @@
       "vol": 999
     }
   ],
-  "captured_at_kst": "2026-09-08T03:06:35+09:00"
+  "captured_at_kst": "2026-09-08T06:41:58+09:00"
 }
