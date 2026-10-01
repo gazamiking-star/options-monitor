@@ -1,123 +1,5 @@
 [
   {
-    "captured_at_kst": "2026-08-19T06:50:03+09:00",
-    "symbol": "SNDK",
-    "name": "Sandisk Corporation",
-    "spot": 1625.78,
-    "expiry": "2026-08-21",
-    "dte": 2.1,
-    "maxPain": 1565.0,
-    "distance_to_max_pain_pct": -3.74,
-    "atm_strike": 1630,
-    "atm_call_iv": 0.8613,
-    "atm_put_iv": 0.836,
-    "atm_gamma": 0.0038,
-    "call_wall_near": {
-      "strike": 1600,
-      "oi": 4007
-    },
-    "put_wall_near": {
-      "strike": 1600,
-      "oi": 3816
-    },
-    "call_wall_all": {
-      "strike": 2000,
-      "oi": 5013
-    },
-    "put_wall_all": {
-      "strike": 800,
-      "oi": 4775
-    },
-    "top_call_oi": [
-      {
-        "strike": 2000,
-        "oi": 5013
-      },
-      {
-        "strike": 1600,
-        "oi": 4007
-      },
-      {
-        "strike": 1700,
-        "oi": 3645
-      },
-      {
-        "strike": 1800,
-        "oi": 3132
-      },
-      {
-        "strike": 1300,
-        "oi": 2842
-      }
-    ],
-    "top_put_oi": [
-      {
-        "strike": 800,
-        "oi": 4775
-      },
-      {
-        "strike": 1600,
-        "oi": 3816
-      },
-      {
-        "strike": 400,
-        "oi": 3709
-      },
-      {
-        "strike": 850,
-        "oi": 3425
-      },
-      {
-        "strike": 1700,
-        "oi": 2907
-      }
-    ],
-    "top_call_volume": [
-      {
-        "strike": 1800,
-        "vol": 8295
-      },
-      {
-        "strike": 2000,
-        "vol": 8152
-      },
-      {
-        "strike": 1700,
-        "vol": 7837
-      },
-      {
-        "strike": 1650,
-        "vol": 6948
-      },
-      {
-        "strike": 1900,
-        "vol": 6848
-      }
-    ],
-    "top_put_volume": [
-      {
-        "strike": 1600,
-        "vol": 8470
-      },
-      {
-        "strike": 1500,
-        "vol": 7535
-      },
-      {
-        "strike": 1400,
-        "vol": 4538
-      },
-      {
-        "strike": 1650,
-        "vol": 4488
-      },
-      {
-        "strike": 1620,
-        "vol": 3639
-      }
-    ]
-  },
-  {
     "captured_at_kst": "2026-08-19T23:57:21+09:00",
     "symbol": "SNDK",
     "name": "Sandisk Corporation",
@@ -11324,6 +11206,124 @@
       {
         "strike": 1745,
         "vol": 1073
+      }
+    ]
+  },
+  {
+    "captured_at_kst": "2026-10-02T03:41:53+09:00",
+    "symbol": "SNDK",
+    "name": "Sandisk Corporation",
+    "spot": 1779.96,
+    "expiry": "2026-10-02",
+    "dte": 0.5,
+    "maxPain": 1700.0,
+    "distance_to_max_pain_pct": -4.49,
+    "atm_strike": 1780,
+    "atm_call_iv": 0.5122,
+    "atm_put_iv": 0.5666,
+    "atm_gamma": 0.0118,
+    "call_wall_near": {
+      "strike": 2000,
+      "oi": 8017
+    },
+    "put_wall_near": {
+      "strike": 1600,
+      "oi": 2211
+    },
+    "call_wall_all": {
+      "strike": 2000,
+      "oi": 8017
+    },
+    "put_wall_all": {
+      "strike": 1600,
+      "oi": 2211
+    },
+    "top_call_oi": [
+      {
+        "strike": 2000,
+        "oi": 8017
+      },
+      {
+        "strike": 1900,
+        "oi": 3406
+      },
+      {
+        "strike": 1800,
+        "oi": 2013
+      },
+      {
+        "strike": 1950,
+        "oi": 1807
+      },
+      {
+        "strike": 1600,
+        "oi": 1750
+      }
+    ],
+    "top_put_oi": [
+      {
+        "strike": 1600,
+        "oi": 2211
+      },
+      {
+        "strike": 900,
+        "oi": 1741
+      },
+      {
+        "strike": 1000,
+        "oi": 1637
+      },
+      {
+        "strike": 1500,
+        "oi": 1545
+      },
+      {
+        "strike": 1700,
+        "oi": 1073
+      }
+    ],
+    "top_call_volume": [
+      {
+        "strike": 1800,
+        "vol": 10103
+      },
+      {
+        "strike": 1900,
+        "vol": 7035
+      },
+      {
+        "strike": 2000,
+        "vol": 6894
+      },
+      {
+        "strike": 1750,
+        "vol": 5060
+      },
+      {
+        "strike": 1850,
+        "vol": 4238
+      }
+    ],
+    "top_put_volume": [
+      {
+        "strike": 1700,
+        "vol": 4430
+      },
+      {
+        "strike": 1600,
+        "vol": 2239
+      },
+      {
+        "strike": 1650,
+        "vol": 2080
+      },
+      {
+        "strike": 1730,
+        "vol": 1833
+      },
+      {
+        "strike": 1750,
+        "vol": 1616
       }
     ]
   }
