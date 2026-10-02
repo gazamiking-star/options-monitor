@@ -1,15 +1,15 @@
 {
   "symbol": "MU",
   "name": "Micron Technology, Inc.",
-  "spot": 1076.53,
+  "spot": 1074.89,
   "expiry": "2026-10-02",
   "dte": 0.5,
   "maxPain": 1045.0,
-  "distance_to_max_pain_pct": -2.93,
-  "atm_strike": 1077.5,
-  "atm_call_iv": 0.2076,
-  "atm_put_iv": 0.124,
-  "atm_gamma": 0.048,
+  "distance_to_max_pain_pct": -2.78,
+  "atm_strike": 1075,
+  "atm_call_iv": 0.0443,
+  "atm_put_iv": 0.0688,
+  "atm_gamma": 0.2262,
   "call_wall_all": {
     "strike": 1100,
     "oi": 12782
@@ -73,46 +73,46 @@
   "top_call_volume": [
     {
       "strike": 1100,
-      "vol": 73493
-    },
-    {
-      "strike": 1090,
-      "vol": 33129
-    },
-    {
-      "strike": 1150,
-      "vol": 28004
+      "vol": 87549
     },
     {
       "strike": 1080,
-      "vol": 25397
+      "vol": 43662
+    },
+    {
+      "strike": 1090,
+      "vol": 42163
     },
     {
       "strike": 1095,
-      "vol": 23885
+      "vol": 30154
+    },
+    {
+      "strike": 1150,
+      "vol": 28806
     }
   ],
   "top_put_volume": [
     {
       "strike": 1080,
-      "vol": 19482
+      "vol": 21991
     },
     {
       "strike": 1050,
-      "vol": 18681
-    },
-    {
-      "strike": 1060,
-      "vol": 13198
+      "vol": 21215
     },
     {
       "strike": 1075,
-      "vol": 13091
+      "vol": 20878
     },
     {
       "strike": 1070,
-      "vol": 11902
+      "vol": 19889
+    },
+    {
+      "strike": 1060,
+      "vol": 16256
     }
   ],
-  "captured_at_kst": "2026-10-03T03:12:41+09:00"
+  "captured_at_kst": "2026-10-03T07:26:29+09:00"
 }
