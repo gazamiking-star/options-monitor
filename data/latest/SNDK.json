@@ -1,118 +1,118 @@
 {
   "symbol": "SNDK",
   "name": "Sandisk Corporation",
-  "spot": 1394.83,
+  "spot": 1324.13,
   "expiry": "2026-10-16",
   "dte": 0.5,
-  "maxPain": 1520.0,
-  "distance_to_max_pain_pct": 8.97,
-  "atm_strike": 1395,
-  "atm_call_iv": 0.7061,
-  "atm_put_iv": 0.6802,
-  "atm_gamma": 0.0109,
+  "maxPain": 1440.0,
+  "distance_to_max_pain_pct": 8.75,
+  "atm_strike": 1325,
+  "atm_call_iv": 0.3807,
+  "atm_put_iv": 0.2225,
+  "atm_gamma": 0.0214,
   "call_wall_all": {
-    "strike": 2000,
-    "oi": 3756
+    "strike": 1675,
+    "oi": 7059
   },
   "put_wall_all": {
     "strike": 1000,
-    "oi": 3376
+    "oi": 3502
   },
   "call_wall_near": {
-    "strike": 1600,
-    "oi": 3510
+    "strike": 1500,
+    "oi": 4019
   },
   "put_wall_near": {
-    "strike": 1400,
-    "oi": 2710
+    "strike": 1200,
+    "oi": 2447
   },
   "top_call_oi": [
     {
+      "strike": 1675,
+      "oi": 7059
+    },
+    {
+      "strike": 1500,
+      "oi": 4019
+    },
+    {
       "strike": 2000,
-      "oi": 3756
+      "oi": 3741
     },
     {
       "strike": 1600,
-      "oi": 3510
-    },
-    {
-      "strike": 1700,
-      "oi": 3158
+      "oi": 3468
     },
     {
       "strike": 1900,
-      "oi": 2674
-    },
-    {
-      "strike": 1675,
-      "oi": 2404
+      "oi": 2696
     }
   ],
   "top_put_oi": [
     {
       "strike": 1000,
-      "oi": 3376
+      "oi": 3502
     },
     {
       "strike": 900,
-      "oi": 3282
-    },
-    {
-      "strike": 1400,
-      "oi": 2710
+      "oi": 3375
     },
     {
       "strike": 1200,
-      "oi": 2338
+      "oi": 2447
     },
     {
       "strike": 1300,
-      "oi": 2331
+      "oi": 2349
+    },
+    {
+      "strike": 840,
+      "oi": 2153
     }
   ],
   "top_call_volume": [
     {
-      "strike": 1400,
-      "vol": 9938
-    },
-    {
-      "strike": 1500,
-      "vol": 8350
-    },
-    {
-      "strike": 1325,
-      "vol": 6292
-    },
-    {
       "strike": 1350,
-      "vol": 6188
+      "vol": 8610
     },
     {
-      "strike": 1450,
-      "vol": 6168
+      "strike": 1400,
+      "vol": 8112
+    },
+    {
+      "strike": 1360,
+      "vol": 6720
+    },
+    {
+      "strike": 1330,
+      "vol": 3894
+    },
+    {
+      "strike": 1370,
+      "vol": 3164
     }
   ],
   "top_put_volume": [
     {
       "strike": 1300,
-      "vol": 4678
+      "vol": 9373
     },
     {
-      "strike": 1200,
-      "vol": 4175
+      "strike": 1335,
+      "vol": 3656
     },
     {
-      "strike": 1400,
-      "vol": 2623
+      "strike": 1340,
+      "vol": 3585
     },
     {
-      "strike": 1350,
-      "vol": 2188
+      "strike": 1330,
+      "vol": 3064
     },
     {
-      "strike": 1360,
-      "vol": 2103
+      "strike": 1320,
+      "vol": 2705
     }
   ],
-  "captured_at_kst": "2026-10-16T08:36:33+09:00"
+  "captured_at_kst": "2026-10-17T02:10:03+09:00"
 }
