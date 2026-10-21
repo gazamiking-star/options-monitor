@@ -7,9 +7,9 @@
   "maxPain": 900.0,
   "distance_to_max_pain_pct": 0.44,
   "atm_strike": 895,
-  "atm_call_iv": 0.4673,
-  "atm_put_iv": 0.4435,
-  "atm_gamma": 0.0257,
+  "atm_call_iv": 0.6381,
+  "atm_put_iv": 0.6178,
+  "atm_gamma": 0.0188,
   "call_wall_all": {
     "strike": 980,
     "oi": 2912
@@ -114,5 +114,5 @@
       "vol": 10076
     }
   ],
-  "captured_at_kst": "2026-10-21T06:16:45+09:00"
+  "captured_at_kst": "2026-10-21T09:01:19+09:00"
 }
