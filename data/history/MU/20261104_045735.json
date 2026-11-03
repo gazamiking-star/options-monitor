@@ -1,0 +1,118 @@
+{
+  "symbol": "MU",
+  "name": "Micron Technology, Inc.",
+  "spot": 846.525,
+  "expiry": "2026-11-04",
+  "dte": 0.5,
+  "maxPain": 875.0,
+  "distance_to_max_pain_pct": 3.36,
+  "atm_strike": 845,
+  "atm_call_iv": 0.7419,
+  "atm_put_iv": 0.5766,
+  "atm_gamma": 0.0171,
+  "call_wall_all": {
+    "strike": 950,
+    "oi": 3107
+  },
+  "put_wall_all": {
+    "strike": 750,
+    "oi": 1632
+  },
+  "call_wall_near": {
+    "strike": 950,
+    "oi": 3107
+  },
+  "put_wall_near": {
+    "strike": 750,
+    "oi": 1632
+  },
+  "top_call_oi": [
+    {
+      "strike": 950,
+      "oi": 3107
+    },
+    {
+      "strike": 900,
+      "oi": 2145
+    },
+    {
+      "strike": 930,
+      "oi": 1555
+    },
+    {
+      "strike": 940,
+      "oi": 1296
+    },
+    {
+      "strike": 1050,
+      "oi": 1251
+    }
+  ],
+  "top_put_oi": [
+    {
+      "strike": 750,
+      "oi": 1632
+    },
+    {
+      "strike": 870,
+      "oi": 1555
+    },
+    {
+      "strike": 800,
+      "oi": 1387
+    },
+    {
+      "strike": 850,
+      "oi": 1143
+    },
+    {
+      "strike": 795,
+      "oi": 1083
+    }
+  ],
+  "top_call_volume": [
+    {
+      "strike": 900,
+      "vol": 20410
+    },
+    {
+      "strike": 860,
+      "vol": 12403
+    },
+    {
+      "strike": 870,
+      "vol": 11878
+    },
+    {
+      "strike": 865,
+      "vol": 10328
+    },
+    {
+      "strike": 950,
+      "vol": 9648
+    }
+  ],
+  "top_put_volume": [
+    {
+      "strike": 850,
+      "vol": 16297
+    },
+    {
+      "strike": 840,
+      "vol": 12852
+    },
+    {
+      "strike": 855,
+      "vol": 12313
+    },
+    {
+      "strike": 800,
+      "vol": 11086
+    },
+    {
+      "strike": 860,
+      "vol": 9673
+    }
+  ],
+  "captured_at_kst": "2026-11-04T04:57:37+09:00"
+}
