@@ -1,118 +1,118 @@
 {
   "symbol": "MU",
   "name": "Micron Technology, Inc.",
-  "spot": 855.1,
+  "spot": 797.07,
   "expiry": "2026-11-04",
   "dte": 0.5,
-  "maxPain": 875.0,
-  "distance_to_max_pain_pct": 2.33,
-  "atm_strike": 855,
-  "atm_call_iv": 0.8766,
-  "atm_put_iv": 0.878,
-  "atm_gamma": 0.0144,
+  "maxPain": 865.0,
+  "distance_to_max_pain_pct": 8.52,
+  "atm_strike": 795,
+  "atm_call_iv": 0.325,
+  "atm_put_iv": 0.1516,
+  "atm_gamma": 0.0406,
   "call_wall_all": {
     "strike": 950,
-    "oi": 3107
+    "oi": 5392
   },
   "put_wall_all": {
-    "strike": 750,
-    "oi": 1632
+    "strike": 800,
+    "oi": 2606
   },
   "call_wall_near": {
-    "strike": 950,
-    "oi": 3107
+    "strike": 900,
+    "oi": 3022
   },
   "put_wall_near": {
-    "strike": 750,
-    "oi": 1632
+    "strike": 800,
+    "oi": 2606
   },
   "top_call_oi": [
     {
       "strike": 950,
-      "oi": 3107
+      "oi": 5392
     },
     {
       "strike": 900,
-      "oi": 2145
+      "oi": 3022
     },
     {
       "strike": 930,
-      "oi": 1555
+      "oi": 1897
+    },
+    {
+      "strike": 890,
+      "oi": 1704
     },
     {
       "strike": 940,
-      "oi": 1296
-    },
-    {
-      "strike": 1050,
-      "oi": 1251
+      "oi": 1670
     }
   ],
   "top_put_oi": [
     {
-      "strike": 750,
-      "oi": 1632
-    },
-    {
-      "strike": 870,
-      "oi": 1555
-    },
-    {
       "strike": 800,
-      "oi": 1387
+      "oi": 2606
+    },
+    {
+      "strike": 750,
+      "oi": 1808
     },
     {
       "strike": 850,
-      "oi": 1143
+      "oi": 1564
     },
     {
-      "strike": 795,
-      "oi": 1083
+      "strike": 825,
+      "oi": 1424
+    },
+    {
+      "strike": 870,
+      "oi": 1416
     }
   ],
   "top_call_volume": [
     {
-      "strike": 900,
-      "vol": 23945
+      "strike": 820,
+      "vol": 39691
     },
     {
-      "strike": 860,
-      "vol": 14883
+      "strike": 810,
+      "vol": 37639
     },
     {
-      "strike": 870,
-      "vol": 13735
+      "strike": 830,
+      "vol": 34707
     },
     {
-      "strike": 950,
-      "vol": 12354
+      "strike": 850,
+      "vol": 34392
     },
     {
-      "strike": 865,
-      "vol": 11617
+      "strike": 825,
+      "vol": 28304
     }
   ],
   "top_put_volume": [
     {
-      "strike": 850,
-      "vol": 19591
-    },
-    {
-      "strike": 840,
-      "vol": 14109
-    },
-    {
-      "strike": 855,
-      "vol": 13739
-    },
-    {
       "strike": 800,
-      "vol": 13456
+      "vol": 82304
     },
     {
-      "strike": 860,
-      "vol": 10341
+      "strike": 790,
+      "vol": 45908
+    },
+    {
+      "strike": 795,
+      "vol": 36931
+    },
+    {
+      "strike": 805,
+      "vol": 34054
+    },
+    {
+      "strike": 785,
+      "vol": 30080
     }
   ],
-  "captured_at_kst": "2026-11-04T09:29:46+09:00"
+  "captured_at_kst": "2026-11-05T05:16:15+09:00"
 }
