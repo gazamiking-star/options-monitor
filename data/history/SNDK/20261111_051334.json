@@ -1,0 +1,118 @@
+{
+  "symbol": "SNDK",
+  "name": "Sandisk Corporation",
+  "spot": 851.7,
+  "expiry": "2026-11-13",
+  "dte": 2.2,
+  "maxPain": 900.0,
+  "distance_to_max_pain_pct": 5.67,
+  "atm_strike": 850,
+  "atm_call_iv": 1.0289,
+  "atm_put_iv": 1.0486,
+  "atm_gamma": 0.0059,
+  "call_wall_all": {
+    "strike": 1000,
+    "oi": 2416
+  },
+  "put_wall_all": {
+    "strike": 700,
+    "oi": 1376
+  },
+  "call_wall_near": {
+    "strike": 950,
+    "oi": 1736
+  },
+  "put_wall_near": {
+    "strike": 820,
+    "oi": 927
+  },
+  "top_call_oi": [
+    {
+      "strike": 1000,
+      "oi": 2416
+    },
+    {
+      "strike": 1100,
+      "oi": 2184
+    },
+    {
+      "strike": 1500,
+      "oi": 1993
+    },
+    {
+      "strike": 950,
+      "oi": 1736
+    },
+    {
+      "strike": 900,
+      "oi": 1663
+    }
+  ],
+  "top_put_oi": [
+    {
+      "strike": 700,
+      "oi": 1376
+    },
+    {
+      "strike": 410,
+      "oi": 1209
+    },
+    {
+      "strike": 600,
+      "oi": 984
+    },
+    {
+      "strike": 820,
+      "oi": 927
+    },
+    {
+      "strike": 650,
+      "oi": 779
+    }
+  ],
+  "top_call_volume": [
+    {
+      "strike": 900,
+      "vol": 5805
+    },
+    {
+      "strike": 880,
+      "vol": 3679
+    },
+    {
+      "strike": 1000,
+      "vol": 3671
+    },
+    {
+      "strike": 1100,
+      "vol": 3151
+    },
+    {
+      "strike": 950,
+      "vol": 2695
+    }
+  ],
+  "top_put_volume": [
+    {
+      "strike": 850,
+      "vol": 3237
+    },
+    {
+      "strike": 800,
+      "vol": 2791
+    },
+    {
+      "strike": 840,
+      "vol": 1715
+    },
+    {
+      "strike": 880,
+      "vol": 1544
+    },
+    {
+      "strike": 700,
+      "vol": 1487
+    }
+  ],
+  "captured_at_kst": "2026-11-11T05:13:35+09:00"
+}
