@@ -7,9 +7,9 @@
   "maxPain": 760.0,
   "distance_to_max_pain_pct": 10.07,
   "atm_strike": 690,
-  "atm_call_iv": 0.9313,
-  "atm_put_iv": 0.7148,
-  "atm_gamma": 0.0168,
+  "atm_call_iv": 1.1869,
+  "atm_put_iv": 1.1897,
+  "atm_gamma": 0.0131,
   "call_wall_all": {
     "strike": 800,
     "oi": 13411
@@ -73,46 +73,46 @@
   "top_call_volume": [
     {
       "strike": 750,
-      "vol": 36434
+      "vol": 37132
     },
     {
       "strike": 800,
-      "vol": 35888
+      "vol": 36178
     },
     {
       "strike": 780,
-      "vol": 14976
+      "vol": 15219
     },
     {
       "strike": 760,
-      "vol": 14158
+      "vol": 14396
     },
     {
       "strike": 730,
-      "vol": 13671
+      "vol": 13912
     }
   ],
   "top_put_volume": [
     {
       "strike": 700,
-      "vol": 22789
+      "vol": 23089
     },
     {
       "strike": 650,
-      "vol": 15293
-    },
-    {
-      "strike": 1300,
-      "vol": 10368
+      "vol": 15548
     },
     {
       "strike": 720,
-      "vol": 9549
+      "vol": 9616
+    },
+    {
+      "strike": 1300,
+      "vol": 9368
     },
     {
       "strike": 730,
-      "vol": 8729
+      "vol": 8735
     }
   ],
-  "captured_at_kst": "2026-11-20T06:11:21+09:00"
+  "captured_at_kst": "2026-11-20T11:28:51+09:00"
 }
